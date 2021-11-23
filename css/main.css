@@ -1,5 +1,48 @@
+/* NAVBAR */
+
 .w3-bar
 {
-    width:100%;
+    width:70%;
 }
 
+.w3-top
+{
+    margin:auto;  
+    color: #fff;
+}
+
+.w3-button, .w3-bar-item
+{
+    text-decoration: underline;
+    font-family: Oswald;
+    font-size: 19px;
+    color: #fff;
+}
+
+.nav-transparent
+{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Fixed Background Image */
+body {
+    background-image: url("https://c.files.bbci.co.uk/5411/production/_89812512_033150046.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+/* Middle Title On Home Page */
+
+.middle-title
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 10%;
+    width: 75vw;
+    height: 40vw;
+    margin: auto;
+    font-family: Oswald;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10%;
+}
