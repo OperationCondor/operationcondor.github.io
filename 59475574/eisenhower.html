@@ -1,1 +1,250 @@
-tbd
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <style>
+        /* NAVBAR */
+
+        .w3-bar {
+            color: #fff;
+        }
+
+        .w3-top {
+            width: 100vw;
+        }
+
+        .w3-button,
+        .w3-bar-item {
+            font-family: Oswald;
+            font-size: 19px;
+            color: #fff;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-transparent {
+            background-color: rgba(0, 0, 0, 1);
+
+        }
+
+        /* Fixed Background Image */
+
+        .top-header {
+            background-image: url("https://operationcondor.github.io/59475574/cold-war-bg.png");
+            background-size: cover;
+            /* background-attachment: fixed; */
+            padding-top: 25vh;
+            padding-bottom: 25vh;
+        }
+
+        /* Middle Title On Home Page */
+
+        .middle-title {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 2%;
+            padding-bottom: 2%;
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 75vw;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Oswald;
+            font-size: 50px;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            border: 0px;
+        }
+
+        .title-text {
+            font-family: Oswald;
+            font-size: 50px;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+
+        .thesis-text {
+            /* background-color: rgba(0, 0, 0, 0.69); */
+            padding-top: 2%;
+            padding-bottom: 2%;
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 85vw;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 17px;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            border: 0px;
+        }
+
+        body {
+            background-color: #F3F3F3;
+        }
+
+        blockquote {
+            display: block;
+            background: #fff;
+            padding: 15px 30px 30px 50px;
+            margin: 0 0 20px;
+            position: relative;
+
+            /*Font*/
+            font-family: Georgia, serif;
+            font-size: 20px;
+            line-height: 1.2;
+            color: #666;
+            text-align: justify;
+
+            /*Borders - (Optional)*/
+            border-left: 15px solid #cb032b;
+            border-right: 3px solid #cb032b;
+        }
+
+        blockquote::before {
+            content: "\201C";
+            /*Unicode for Left Double Quote*/
+
+            /*Font*/
+            font-family: Georgia, serif;
+            font-size: 60px;
+            font-weight: bold;
+            color: #999;
+
+            /*Positioning*/
+            position: absolute;
+            left: 10px;
+            top: 5px;
+        }
+
+        blockquote::after {
+            /*Reset to make sure*/
+            content: "";
+        }
+
+        blockquote em {
+            font-style: italic;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="w3-top nav-transparent">
+        <div class="w3-bar">
+            <a href="/59475574/" class="w3-bar-item w3-button">Home</a>
+            <a href="/59475574/thesis" class="w3-bar-item w3-button">Thesis</a>
+
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Historical Context </button>
+                <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                    <a href="/59475574/cold-war" class="w3-bar-item w3-button">Cold War</a>
+                    <a href="/59475574/eisenhower" class="w3-bar-item w3-button">Eisenhower in Central America</a>
+                    <a href="/59475574/new-leadership" class="w3-bar-item w3-button">New Leadership in Chile</a>
+                </div>
+            </div>
+
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">The Operation </button>
+                <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                    <a href="/59475574/american-intervention" class="w3-bar-item w3-button">American Intervention in
+                        Chile</a>
+                    <a href="/59475574/augusto-pinochet" class="w3-bar-item w3-button">Augusto Pinochet</a>
+                    <a href="/59475574/argentina" class="w3-bar-item w3-button">Argentina</a>
+                    <a href="/59475574/bolivia" class="w3-bar-item w3-button">Bolivia</a>
+                </div>
+            </div>
+
+            <a href="/59475574/lasting-effects" class="w3-bar-item w3-button">Lasting Effects</a>
+            <a href="/59475574/leftwing-shift" class="w3-bar-item w3-button">South American Left-Wing Shift</a>
+            <a href="/59475574/archives-of-terror" class="w3-bar-item w3-button">Archives of Terror</a>
+            <a href="/59475574/good-guy" class="w3-bar-item w3-button">Who Was The Good Guy?</a>
+
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Research</button>
+                <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                    <a href="/59475574/process-paper" class="w3-bar-item w3-button">Process Paper</a>
+                    <a href="/59475574/bibliography" class="w3-bar-item w3-button">Bibliography</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-header">
+        <div class="middle-title">
+            <h1 class="title-text">Historical Context<br><span style="font-size: 35px;">Eisenhower In Central
+                    America</span></h1>
+        </div>
+
+    </div>
+    <div class="container" style="margin-top: 5vh;">
+        <div class="row" style="text-align: left; margin-top: 5vh">
+            <div class="col-12">
+                <blockquote>
+                    “On January 1, 1959, a young Cuban nationalist named Fidel Castro drove his guerilla army into
+                    Havana
+                    and overthrew General Fulgencio Batista (1901-1973), the nation’s American-backed president. For the
+                    next two years, officials at the U.S. State Department and the CIA attempted to remove Castro.”
+                    <br /><br /><em><strong>- The Monroe Doctrine</strong></em>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="row" style="text-align: left; margin-top: 5vh">
+            <p style="font-size: 18px">
+                Although the Truman Doctrine was much more recent, the 1823 Monroe Doctrine became relevant as it stated
+                that the United States had the right to intervene in Latin American affairs. Nearly a century later, the
+                US
+                would tactically use this doctrine to justify its involvement in Operation Condor.
+            </p>
+        </div>
+
+        <div class="row" style="text-align: right; padding-left: 3vw; padding-right: 3vw; margin-top: 5vh">
+            <div class="col-8">
+                <blockquote>
+                    “The American republics wanted no Communist regime within their midst. They recognized that
+                    subversion by Communism was only another form of aggression, even more evil than that achieved by
+                    naked military force… Something had to be done quickly.
+                    <br><br>
+                    The first task was to marshal and
+                    crystallize Latin American public opinion on the issue. The opportunity presented itself at the
+                    Tenth Inter-American Conference of the Organization of the American States (OAS) which met in
+                    Caracas, Venezuela, in March of 1954. At that meeting the United States urged the adoption of a
+                    joint condemnation of Communism, contending vigorously that it should not be permitted to control
+                    any state in the Western Hemisphere. [Secretary of State John] Foster Dulles, representing the
+                    United States, argued that if Communism should succeed to this extent, it should be treated as a
+                    threat to the peace. On March 6 he introduced a draft resolution of a "Declaration of Solidarity for
+                    the Preservation of the Political Integrity of the American States against International Communist
+                    Intervention… by the middle of 1954 Latin America was free, for the time being at least, of any
+                    fixed outposts of Communism.”
+
+                    <br><br>
+                    <em><strong>- Eisenhower on Guatemala, 1954</strong></em>
+                </blockquote>
+            </div>
+            <div class="col-4">
+                <img src="https://operationcondor.github.io/59475574/eisen-desk.png" width="100%">
+            </div>
+        </div>
+
+</body>
+
+</html>
