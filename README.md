@@ -19,4 +19,3 @@ To-Do:
 - Augusto Pinochet change bottommost picture
 - Add citations to image
 - Higher resolution images
--hello
