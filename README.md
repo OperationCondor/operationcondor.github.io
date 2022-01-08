@@ -6,3 +6,4 @@
 To-Do:
 - Fix some formatting (Add images adjacent rather than above/below text)
 - Add citations to image/interviews
+- Add Photo Gallery
