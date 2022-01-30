@@ -47,7 +47,7 @@
         /* Fixed Background Image */
 
         .top-header {
-            background-image: url("https://operationcondor.github.io/59475574/cold-war-bg.png");
+            background-image: url("./cold-war-bg.png");
             background-size: cover;
             /* background-attachment: fixed; */
             padding-top: 25vh;
@@ -151,38 +151,38 @@
 <body>
     <div class="w3-top nav-transparent">
         <div class="w3-bar">
-            <a href="/59475574/" class="w3-bar-item w3-button">Home</a>
-            <a href="/59475574/map" class="w3-bar-item w3-button">Map</a>
-            <a href="/59475574/thesis" class="w3-bar-item w3-button">Thesis</a>
+            <a href="/" class="w3-bar-item w3-button">Home</a>
+            <a href="/map" class="w3-bar-item w3-button">Map</a>
+            <a href="/thesis" class="w3-bar-item w3-button">Thesis</a>
 
             <div class="w3-dropdown-hover">
                 <button class="w3-button">Historical Context </button>
                 <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-                    <a href="/59475574/cold-war" class="w3-bar-item w3-button">Cold War</a>
-                    <a href="/59475574/eisenhower" class="w3-bar-item w3-button">Eisenhower in Central America</a>
-                    <a href="/59475574/new-leadership" class="w3-bar-item w3-button">New Leadership in Chile</a>
+                    <a href="/cold-war" class="w3-bar-item w3-button">Cold War</a>
+                    <a href="/eisenhower" class="w3-bar-item w3-button">Eisenhower in Central America</a>
+                    <a href="/new-leadership" class="w3-bar-item w3-button">New Leadership in Chile</a>
                 </div>
             </div>
 
             <div class="w3-dropdown-hover">
                 <button class="w3-button">The Operation </button>
                 <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-                    <a href="/59475574/american-intervention" class="w3-bar-item w3-button">American Intervention in
+                    <a href="/american-intervention" class="w3-bar-item w3-button">American Intervention in
                         Chile</a>
-                    <a href="/59475574/augusto-pinochet" class="w3-bar-item w3-button">Augusto Pinochet</a>
-                    <a href="/59475574/argentina" class="w3-bar-item w3-button">Argentina</a>
+                    <a href="/augusto-pinochet" class="w3-bar-item w3-button">Augusto Pinochet</a>
+                    <a href="/argentina" class="w3-bar-item w3-button">Argentina</a>
                 </div>
             </div>
-            <a href="/59475574/archives-of-transnational-repression" class="w3-bar-item w3-button">Archives of Transnational Repression</a>
+            <a href="/archives-of-transnational-repression" class="w3-bar-item w3-button">Archives of Transnational Repression</a>
 
-            <a href="/59475574/lasting-effects" class="w3-bar-item w3-button">Lasting Effects</a>
-            <a href="/59475574/good-guy" class="w3-bar-item w3-button">Who Was The Good Guy?</a>
+            <a href="/lasting-effects" class="w3-bar-item w3-button">Lasting Effects</a>
+            <a href="/good-guy" class="w3-bar-item w3-button">Who Was The Good Guy?</a>
 
             <div class="w3-dropdown-hover">
                 <button class="w3-button">Research</button>
                 <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-                    <a href="/59475574/process-paper" class="w3-bar-item w3-button">Process Paper</a>
-                    <a href="/59475574/bibliography" class="w3-bar-item w3-button">Bibliography</a>
+                    <a href="/process-paper" class="w3-bar-item w3-button">Process Paper</a>
+                    <a href="/bibliography" class="w3-bar-item w3-button">Bibliography</a>
                 </div>
             </div>
         </div>
@@ -194,26 +194,54 @@
 
     </div>
     <div class="container" style="margin-top: 3vh;">
-        <div class="row" style="text-align: left; margin-top: 5vh">
-            <div class="col-12">
-                <p style="font-size: 18px;">
-                    <!-- General Augusto Pinochet was installed as president and officially took over on December 17, 1974.
-                    He remained as president until March 11, 1990, at which time he resigned but remained
-                    commander-in-chief until 1998. -->
-
-                    The US helped to overthrow Allende, a well-known Marxist leader backed by the repressive Soviet
-                    Regime and Fidel Castro. But at what cost? More deaths and repression would continue to ensue under
-                    Pinochet, followed by a mass purge of supposed left-wing supporters.
-                </p>
-            </div>
+        <div class="gallery">
+            <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of Betmann (Getty Images).jpg" />
+            <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of DepositPhotos.jpg" /> 
+            <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of Eduardo Di Bahia (Associated Press).PNG" /> 
+            <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of ISSUU.jpg" /> 
+            <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of Jungullstein Bild—Getty Images.jpg" /> 
+            <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of TIME Magazine.jpg" /> 
+            <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of the Associated Press (2).jpeg" /> 
+            <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of the Associated Press (3).jpeg" />
+            <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of the Associated Press.PNG" /> 
         </div>
     </div>
 
+    <style>
+        .gallery {
+            line-height: 0;
+            -webkit-column-count: 4;
+            /* split it into 5 columns */
+            -webkit-column-gap: 5px;
+            /* give it a 5px gap between columns */
+            -moz-column-count: 4;
+            -moz-column-gap: 5px;
+            column-count: 4;
+            column-gap: 5px;
+        }
 
-    <center><a href="/59475574/"><button style="font-size: 20px">← Back</button></a><a
-            href="/59475574/thesis"><button style="font-size: 20px">Next →</button></a>
+        .gallery img {
+            width: 100% !important;
+            height: auto !important;
+            margin-bottom: 5px;
+        }
+
+        /* .gallery img:hover {
+            filter: brightness(50%);
+            cursor: pointer;
+            transition: filter 0.5s;
+        } */
+    </style>
+    
+
+    <center><a href="/"><button style="font-size: 20px">← Back</button></a><a
+            href="/thesis"><button style="font-size: 20px">Next →</button></a>
     </center>
 
+
+
+
+    
 </body>
 
 </html>
