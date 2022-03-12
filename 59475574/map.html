@@ -190,63 +190,62 @@
       </h1>
     </div>
   </div>
-  <div class="container" style="margin-top: 3vh">
+  <div class="" style="margin-top: 3vh">
     <div class="gallery">
 
       <div>
-        <h4 class="text-dark">Salvador Allende</h4>
         <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of Betmann (Getty Images).jpg" />
+        <h4 class="text-white quote" style="top: 25%; left: 10%;">Salvador Allende</h4>
         <p class="text-white">[Courtesy of Betmann]</p>
       </div>
 
       <div>
-        <h4 class="text-dark">"Death Flight" Plane</h4>
         <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of DepositPhotos.jpg" />
+        <h4 class="text-white quote" style="top: 25%; left: 10%;">"Death Flight" Plane</h4>
         <p class="text-white">[Courtesy of Deposit Photos]</p>
       </div>
 
       <div>
-        <h4 class="text-dark">Jorge Rafael Videla</h4>
-        <img style="position: relative"
+        <img
           src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of Eduardo Di Bahia (Associated Press).PNG" />
-          <p class="text-white">Quote here</p>
+          <h4 class="text-white quote" style="top: 25%; left: 10%;">Jorge Rafael Videla</h4>
           <p class="text-white">[Courtesy of Eduardo Di Bahia]</p>
       </div>
 
       <div>
-        <h4 class="text-dark">Pinochet Meets Kissinger</h4>
         <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of ISSUU.jpg" />
+        <h4 class="text-white quote" style="top: 25%; left: 10%;">Pinochet Meets Kissinger</h4>
         <p class="text-white">[Courtesy of ISSUU]</p>
       </div>
 
       <div>
-        <h4 class="text-dark">Fidel Castro</h4>
         <img
           src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of Jungullstein Bild—Getty Images.jpg" />
-        <p class="text-white">[Courtesy of Bild—Getty Images]</p>
+          <h4 class="text-white quote" style="top: 25%; left: 10%;">Fidel Castro</h4>
+          <p class="text-white">[Courtesy of Bild—Getty Images]</p>
       </div>
 
       <div>
-        <h4 class="text-dark">Sebastian Piñera</h4>
         <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of TIME Magazine.jpg" />
+        <h4 class="text-white quote" style="top: 25%; left: 10%;">Sebastian Piñera</h4>
         <p class="text-white">[Courtesy of TIME Magazine]</p>
       </div>
 
       <div>
-        <h4 class="text-dark">Bombing of La Moneda</h4>
         <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of the Associated Press (2).jpeg" />
+        <h4 class="text-white quote" style="top: 25%; left: 10%;">Bombing of La Moneda</h4>
         <p class="text-white">[Courtesy of Associated Press]</p>
       </div>
 
       <div>
-        <h4 class="text-dark">Chilean Coup, 1973</h4>
         <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of the Associated Press (3).jpeg" />
+        <h4 class="text-white quote" style="top: 25%; left: 10%;">Chilean Coup, 1973</h4>
         <p class="text-white">[Courtesy of Associated Press]</p>
       </div>
 
       <div>
-        <h4 class="text-dark">Nixon and Kissinger</h4>
         <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of the Associated Press.PNG" />
+        <h4 class="text-white quote" style="top: 25%; left: 10%;">Nixon and Kissinger</h4>
         <p class="text-white">[Courtesy of Associated Press]</p>
       </div>
 
@@ -254,6 +253,7 @@
 
     <style>
       .gallery {
+        margin: 25px 100px 0px 100px;
         line-height: 25px;
         -webkit-column-count: 4;
         /* split it into 5 columns */
@@ -261,12 +261,13 @@
         /* give it a 5px gap between columns */
         -moz-column-count: 4;
         -moz-column-gap: 5px;
-        column-count: 4;
+        column-count: 3;
         column-gap: 10px;
       }
 
       .gallery div {
         display: inline-block;
+        position: relative;
         width: 100%;
         height: auto;
         margin-bottom: 0px;
@@ -286,21 +287,32 @@
 
       .gallery div .quote {
         z-index: 100;
-        position: relative;
-        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        background: transparent;
+        color: white;
+        margin-bottom: 5px;
+        font-family: sans-serif;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0.5s linear;
+        transition: visibility 0s, opacity 0.5s linear;
+      }
+      .gallery div:hover .quote{
+        visibility: visible;
+        opacity: 1;
       }
 
       .gallery img:hover {
-            filter: brightness(50%);
-            transition: filter 0.5s;
-        }
+        filter: brightness(50%);
+        transition: filter 0.5s;
+        visibility: visible !important;
+      }
+
     </style>
 
     <hr>
-    <h2>Interactive Timeline of Events</h2>
-    <div class="container">
-
-    </div>
 
     <center>
       <a href="/59475574/"><button style="font-size: 20px">← Back</button></a><a href="/59475574/thesis"><button
