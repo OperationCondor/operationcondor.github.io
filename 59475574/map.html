@@ -1,277 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interactive Map</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
 
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Map</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <!-- BOOTSTRAP -->
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet" />
 
-    <style>
-      /* NAVBAR */
+  <!-- BOOTSTRAP -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-      .w3-bar {
-        color: #fff;
-      }
+  <style>
+    /* NAVBAR */
 
-      .w3-top {
-        width: 100vw;
-      }
+    .w3-bar {
+      color: #fff;
+    }
 
-      .w3-button,
-      .w3-bar-item {
-        font-family: Oswald;
-        font-size: 19px;
-        color: #fff;
-        letter-spacing: 0.5px;
-      }
+    .w3-top {
+      width: 100vw;
+    }
 
-      .nav-transparent {
-        background-color: rgba(0, 0, 0, 1);
-      }
+    .w3-button,
+    .w3-bar-item {
+      font-family: Oswald;
+      font-size: 19px;
+      color: #fff;
+      letter-spacing: 0.5px;
+    }
 
-      /* Fixed Background Image */
+    .nav-transparent {
+      background-color: rgba(0, 0, 0, 1);
+    }
 
-      .top-header {
-        background-image: url("https://operationcondor.github.io/59475574/cold-war-bg.png");
-        background-size: cover;
-        /* background-attachment: fixed; */
-        padding-top: 25vh;
-        padding-bottom: 25vh;
-      }
+    /* Fixed Background Image */
 
-      /* Middle Title On Home Page */
+    .top-header {
+      background-image: url("https://operationcondor.github.io/59475574/cold-war-bg.png");
+      background-size: cover;
+      /* background-attachment: fixed; */
+      padding-top: 25vh;
+      padding-bottom: 25vh;
+    }
 
-      .middle-title {
-        background-color: rgba(0, 0, 0, 0.5);
-        padding-top: 2%;
-        padding-bottom: 2%;
-        padding-left: 5%;
-        padding-right: 5%;
-        width: 75vw;
-        margin-left: auto;
-        margin-right: auto;
-        font-family: Oswald;
-        font-size: 50px;
-        color: #fff;
-        text-align: center;
-        border-radius: 5px;
-        border: 0px;
-      }
+    /* Middle Title On Home Page */
 
-      .title-text {
-        font-family: Oswald;
-        font-size: 50px;
-        font-weight: bold;
-        letter-spacing: 4px;
-      }
+    .middle-title {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding-top: 2%;
+      padding-bottom: 2%;
+      padding-left: 5%;
+      padding-right: 5%;
+      width: 75vw;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: Oswald;
+      font-size: 50px;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      border: 0px;
+    }
 
-      .thesis-text {
-        /* background-color: rgba(0, 0, 0, 0.69); */
-        padding-top: 2%;
-        padding-bottom: 2%;
-        padding-left: 5%;
-        padding-right: 5%;
-        width: 85vw;
-        text-align: left;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 17px;
-        color: #fff;
-        text-align: center;
-        border-radius: 5px;
-        border: 0px;
-      }
+    .title-text {
+      font-family: Oswald;
+      font-size: 50px;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
 
-      body {
-        background-color: #f3f3f3;
-      }
+    .thesis-text {
+      /* background-color: rgba(0, 0, 0, 0.69); */
+      padding-top: 2%;
+      padding-bottom: 2%;
+      padding-left: 5%;
+      padding-right: 5%;
+      width: 85vw;
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 17px;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      border: 0px;
+    }
 
-      blockquote {
-        display: block;
-        background: #fff;
-        padding: 15px 30px 30px 50px;
-        margin: 0 0 20px;
-        position: relative;
+    body {
+      background-color: #f3f3f3;
+    }
 
-        /*Font*/
-        font-family: Georgia, serif;
-        font-size: 20px;
-        line-height: 1.2;
-        color: #666;
-        text-align: justify;
+    blockquote {
+      display: block;
+      background: #fff;
+      padding: 15px 30px 30px 50px;
+      margin: 0 0 20px;
+      position: relative;
 
-        /*Borders - (Optional)*/
-        border-left: 15px solid #cb032b;
-        border-right: 3px solid #cb032b;
-      }
+      /*Font*/
+      font-family: Georgia, serif;
+      font-size: 20px;
+      line-height: 1.2;
+      color: #666;
+      text-align: justify;
 
-      blockquote::before {
-        content: "\201C";
-        /*Unicode for Left Double Quote*/
+      /*Borders - (Optional)*/
+      border-left: 15px solid #cb032b;
+      border-right: 3px solid #cb032b;
+    }
 
-        /*Font*/
-        font-family: Georgia, serif;
-        font-size: 60px;
-        font-weight: bold;
-        color: #999;
+    blockquote::before {
+      content: "\201C";
+      /*Unicode for Left Double Quote*/
 
-        /*Positioning*/
-        position: absolute;
-        left: 10px;
-        top: 5px;
-      }
+      /*Font*/
+      font-family: Georgia, serif;
+      font-size: 60px;
+      font-weight: bold;
+      color: #999;
 
-      blockquote::after {
-        /*Reset to make sure*/
-        content: "";
-      }
+      /*Positioning*/
+      position: absolute;
+      left: 10px;
+      top: 5px;
+    }
 
-      blockquote em {
-        font-style: italic;
-      }
-    </style>
-  </head>
+    blockquote::after {
+      /*Reset to make sure*/
+      content: "";
+    }
 
-  <body>
-    <div class="w3-top nav-transparent">
-      <div class="w3-bar">
-        <a href="/59475574/" class="w3-bar-item w3-button">Home</a>
-        <a href="/59475574/map" class="w3-bar-item w3-button">Photo Gallery</a>
-        <a href="/59475574/thesis" class="w3-bar-item w3-button">Thesis</a>
+    blockquote em {
+      font-style: italic;
+    }
+  </style>
+</head>
 
-        <div class="w3-dropdown-hover">
-          <button class="w3-button">Historical Context</button>
-          <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-            <a href="/59475574/cold-war" class="w3-bar-item w3-button"
-              >Cold War</a
-            >
-            <a href="/59475574/eisenhower" class="w3-bar-item w3-button"
-              >Eisenhower in Central America</a
-            >
-            <a href="/59475574/new-leadership" class="w3-bar-item w3-button"
-              >New Leadership in Chile</a
-            >
-          </div>
+<body>
+  <div class="w3-top nav-transparent">
+    <div class="w3-bar">
+      <a href="/59475574/" class="w3-bar-item w3-button">Home</a>
+      <a href="/59475574/map" class="w3-bar-item w3-button">Photo Gallery</a>
+      <a href="/59475574/thesis" class="w3-bar-item w3-button">Thesis</a>
+
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Historical Context</button>
+        <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+          <a href="/59475574/cold-war" class="w3-bar-item w3-button">Cold War</a>
+          <a href="/59475574/eisenhower" class="w3-bar-item w3-button">Eisenhower in Central America</a>
+          <a href="/59475574/new-leadership" class="w3-bar-item w3-button">New Leadership in Chile</a>
         </div>
+      </div>
 
-        <div class="w3-dropdown-hover">
-          <button class="w3-button">The Operation</button>
-          <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-            <a
-              href="/59475574/american-intervention"
-              class="w3-bar-item w3-button"
-              >American Intervention in Chile</a
-            >
-            <a href="/59475574/augusto-pinochet" class="w3-bar-item w3-button"
-              >Augusto Pinochet</a
-            >
-            <a href="/59475574/argentina" class="w3-bar-item w3-button"
-              >Argentina</a
-            >
-          </div>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">The Operation</button>
+        <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+          <a href="/59475574/american-intervention" class="w3-bar-item w3-button">American Intervention in Chile</a>
+          <a href="/59475574/augusto-pinochet" class="w3-bar-item w3-button">Augusto Pinochet</a>
+          <a href="/59475574/argentina" class="w3-bar-item w3-button">Argentina</a>
         </div>
-        <!-- <a href="/59475574/archives-of-transnational-repression" class="w3-bar-item w3-button">Archives of Transnational Repression</a> -->
+      </div>
+      <!-- <a href="/59475574/archives-of-transnational-repression" class="w3-bar-item w3-button">Archives of Transnational Repression</a> -->
 
-        <a href="/59475574/lasting-effects" class="w3-bar-item w3-button"
-          >Lasting Effects</a
-        >
-        <a href="/59475574/good-guy" class="w3-bar-item w3-button"
-          >Who Was The Good Guy?</a
-        >
+      <a href="/59475574/lasting-effects" class="w3-bar-item w3-button">Lasting Effects</a>
+      <a href="/59475574/good-guy" class="w3-bar-item w3-button">Who Was The Good Guy?</a>
 
-        <div class="w3-dropdown-hover">
-          <button class="w3-button">Research</button>
-          <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-            <a href="/59475574/process-paper" class="w3-bar-item w3-button"
-              >Process Paper</a
-            >
-            <a href="/59475574/bibliography" class="w3-bar-item w3-button"
-              >Bibliography</a
-            >
-          </div>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Research</button>
+        <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+          <a href="/59475574/process-paper" class="w3-bar-item w3-button">Process Paper</a>
+          <a href="/59475574/bibliography" class="w3-bar-item w3-button">Bibliography</a>
         </div>
       </div>
     </div>
-    <div class="top-header">
-      <div class="middle-title">
-        <h1 class="title-text">
-          Interactive Map<br /><span style="font-size: 35px"
-            >Timeline of Events</span
-          >
-        </h1>
-      </div>
+  </div>
+  <div class="top-header">
+    <div class="middle-title">
+      <h1 class="title-text">
+        Photo Gallery
+      </h1>
     </div>
-    <div class="container" style="margin-top: 3vh">
-      <div class="gallery">
-        <img
-          src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of Betmann (Getty Images).jpg"
-        />
-        <p>[Courtesy of Betmann]</p>
-        <img
-          src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of DepositPhotos.jpg"
-        />
-        <p>[Courtesy of Deposit Photos]</p>
-        <img
-          src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of Eduardo Di Bahia (Associated Press).PNG"
-        />
-        <p>[Courtesy of Eduardo Di Bahia]</p>
-        <img
-          src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of ISSUU.jpg"
-        />
-        <p>[Courtesy of ISSUU]</p>
-        <img
-          src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of Jungullstein Bild—Getty Images.jpg"
-        />
-        <p>[Courtesy of Jungullstein Bild—Getty Images]</p>
-        <img
-          src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of TIME Magazine.jpg"
-        />
-        <p>[Courtesy of TIME Magazine]</p>
-        <img
-          src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of the Associated Press (2).jpeg"
-        />
-        <p>[Courtesy of the Associated Press]</p>
-        <img
-          src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of the Associated Press (3).jpeg"
-        />
-        <p>[Courtesy of the Associated Press]</p>
-        <img
-          src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of the Associated Press.PNG"
-        />
+  </div>
+  <div class="container" style="margin-top: 3vh">
+    <div class="gallery">
+
+      <div>
+        <h4 class="text-dark">Title here</h4>
+        <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of Betmann (Getty Images).jpg" />
+        <p class="text-white">[Courtesy of Betmann]</p>
       </div>
-      <div class="row">
-        <div class="col-6"></div>
-        <div class="col-6">
-          <p>[Courtesy of the Associated Press]</p>
-        </div>
+
+      <div>
+        <h4 class="text-dark">Title here</h4>
+        <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of DepositPhotos.jpg" />
+        <p class="text-white">[Courtesy of Deposit Photos]</p>
       </div>
+
+      <div>
+        <h4 class="text-dark">Jorge Rafael Videla</h4>
+        <img
+          src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of Eduardo Di Bahia (Associated Press).PNG" />
+        <p class="text-white">[Courtesy of Eduardo Di Bahia]</p>
+      </div>
+
+      <div>
+
+        <h4 class="text-dark">Pinochet Meets Kissinger</h4>
+        <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of ISSUU.jpg" />
+        <p class="text-white">[Courtesy of ISSUU]</p>
+      </div>
+
+      <div>
+
+        <h4 class="text-dark">Fidel Castro</h4>
+        <img
+          src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of Jungullstein Bild—Getty Images.jpg" />
+        <p class="text-white">[Courtesy of Bild—Getty Images]</p>
+      </div>
+
+      <div>
+        <h4 class="text-dark">Title here</h4>
+        <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of TIME Magazine.jpg" />
+        <p class="text-white">[Courtesy of TIME Magazine]</p>
+      </div>
+
+      <div>
+        <h4 class="text-dark">Bombing of La Moneda</h4>
+        <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of the Associated Press (2).jpeg" />
+        <p class="text-white">[Courtesy of Associated Press]</p>
+      </div>
+
+      <div>
+        <h4 class="text-dark">Title here</h4>
+        <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of the Associated Press (3).jpeg" />
+        <p class="text-white">[Courtesy of Associated Press]</p>
+      </div>
+
+      <div>
+        <h4 class="text-dark">Nixon and Kissinger</h4>
+        <img src="https://operationcondor.github.io/59475574/photo-gallery/Courtesy of the Associated Press.PNG" />
+        <p class="text-white">[Courtesy of Associated Press]</p>
+      </div>
+
     </div>
 
     <style>
       .gallery {
-        line-height: 0;
+        line-height: 25px;
         -webkit-column-count: 4;
         /* split it into 5 columns */
         -webkit-column-gap: 5px;
@@ -282,10 +266,24 @@
         column-gap: 10px;
       }
 
-      .gallery img {
+      .gallery div {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 0px;
+        /* z-index: 0; */
+      }
+
+      .gallery div img {
         width: 100% !important;
-        height: auto !important;
-        margin-bottom: 20px;
+        margin-bottom: -25px;
+
+      }
+
+      .gallery .text-white {
+        z-index: 10;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.6);
       }
 
       /* .gallery img:hover {
@@ -296,10 +294,9 @@
     </style>
 
     <center>
-      <a href="/59475574/"><button style="font-size: 20px">← Back</button></a
-      ><a href="/59475574/thesis"
-        ><button style="font-size: 20px">Next →</button></a
-      >
+      <a href="/59475574/"><button style="font-size: 20px">← Back</button></a><a href="/59475574/thesis"><button
+          style="font-size: 20px">Next →</button></a>
     </center>
-  </body>
+</body>
+
 </html>
